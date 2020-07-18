@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:context="clr-namespace:MemberManager.ViewModels;assembly=MemberManager.ViewModels" 
+                    xmlns:views="clr-namespace:MemberManager.Views" xmlns:converters="clr-namespace:MemberManager.Views.Converters">
+
+    <converters:BoolToVisibilityConverter x:Key="booToVisibleConverter" />
+
+    <DataTemplate DataType="{x:Type context:LoginViewModel}">
+        <views:Login/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type context:MemberListViewModel}">
+        <views:MemberContainer/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type context:MemberNameViewModel}">
+        <views:MemberNames/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type context:MemberDetailViewModel}">
+        <views:MemberDetail/>
+    </DataTemplate>
+    
+</ResourceDictionary>

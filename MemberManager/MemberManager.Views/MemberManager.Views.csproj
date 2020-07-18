@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<UseWpf>true</UseWpf>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App.Wpf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MemberManager.ViewModels\MemberManager.ViewModels.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MemberContainer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup> 
+
+</Project>
