@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                    
+					xmlns:context="clr-namespace:MemberManager.ViewModels;assembly=MemberManager.ViewModels"
+					xmlns:views="clr-namespace:MemberManager.Views;assembly=MemberManager.Views">
+	
+	<DataTemplate DataType="{x:Type context:LoginViewModel}">
+		<views:Login/>
+	</DataTemplate>
+
+	<DataTemplate DataType="{x:Type context:MainViewModel}">
+		<views:MainView/>
+	</DataTemplate>
+
+	<DataTemplate DataType="{x:Type context:NamePaneViewModel}">
+		<views:NamePane/>
+	</DataTemplate>
+
+	<DataTemplate DataType="{x:Type context:DetailPaneViewModel}">
+		<views:DetailPane/>
+	</DataTemplate>
+
+</ResourceDictionary>
